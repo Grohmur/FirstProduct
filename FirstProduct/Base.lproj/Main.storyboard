@@ -16,26 +16,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kfe-1v-bgq">
-                                <rect key="frame" x="16" y="20" width="288" height="223"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfe-1v-bgq">
+                                <rect key="frame" x="16" y="20" width="288" height="211"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="kfe-1v-bgq" secondAttribute="height" multiplier="288:211" id="8SA-mA-alz"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GmG-mI-8Dt">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GmG-mI-8Dt">
                                 <rect key="frame" x="16" y="251" width="288" height="209"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                                 <color key="tintColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GmG-mI-8Dt" secondAttribute="height" multiplier="288:209" id="iwO-i0-kOo"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kfe-1v-bgq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="89j-vf-xlX"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kfe-1v-bgq" secondAttribute="trailing" constant="16" id="Rer-J9-RJQ"/>
-                            <constraint firstItem="GmG-mI-8Dt" firstAttribute="top" secondItem="kfe-1v-bgq" secondAttribute="bottom" constant="8" symbolic="YES" id="SdS-Yx-I4q"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GmG-mI-8Dt" secondAttribute="bottom" constant="20" id="fn6-Oo-0b0"/>
-                            <constraint firstItem="GmG-mI-8Dt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="g0h-H3-l2L"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GmG-mI-8Dt" secondAttribute="trailing" constant="16" id="gwU-KL-Msp"/>
-                            <constraint firstItem="kfe-1v-bgq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="sLo-nM-c25"/>
+                            <constraint firstItem="kfe-1v-bgq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="59L-u8-Ts4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GmG-mI-8Dt" secondAttribute="trailing" constant="16" id="OBf-8e-bmD"/>
+                            <constraint firstItem="GmG-mI-8Dt" firstAttribute="top" secondItem="kfe-1v-bgq" secondAttribute="bottom" constant="20" id="OLU-7Q-byN"/>
+                            <constraint firstItem="kfe-1v-bgq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Y10-kQ-jcM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kfe-1v-bgq" secondAttribute="trailing" constant="16" id="hhM-91-ePm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GmG-mI-8Dt" secondAttribute="bottom" constant="20" id="jO4-2K-5hz"/>
+                            <constraint firstItem="GmG-mI-8Dt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="nhH-M6-Xu8"/>
                         </constraints>
                     </view>
                 </viewController>
